@@ -13,7 +13,7 @@ h1 {
 .gameboard {
   height: 33em;
   width: 33em;
-   margin: auto;
+  margin: auto;
 }
 
 .square {
@@ -21,10 +21,8 @@ h1 {
   width: 10em;
   border: 3px solid white;
   display: inline-block;
-  text-align: center;
-
+  float: left;
 }
-
 
 button {
   font-family: "ChalkDuster";

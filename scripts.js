@@ -1,19 +1,20 @@
 $(document).ready(function() {
   console.log("working");
 
-  var count = 1;
+  var count = 0;
   var $gamecells = $(".square");
   var moves = ["", "", "", "", "", "", "", "", ""];
+  var turn = "X"
 
   $($gamecells).one('click', function() {
-    count ++;
-    moves[this.id] = this.id;
-
+   moves[this.id] = turn;
+    count++;
+    $(this).html(turn);
     if(count % 2 === 0){
-      moves[this.id] ='X';
+      turn ='X';
     }
     else {
-      moves[this.id] ='O';
+      turn ='O';
     }
     console.log(moves,count);
 
