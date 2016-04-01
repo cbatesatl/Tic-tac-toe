@@ -1,0 +1,50 @@
+body {
+  font-family: "ChalkDuster";
+  color: #E8E8E8;
+  background-image: url(http://i.imgur.com/RPXhbqF.jpg);
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.gameboard {
+  height: 306px;
+  width: 306px;
+  margin: auto;
+  display: table;
+  border: 3px solid white;
+}
+
+.square {
+  height: 100px width: 100px;
+  border: 3px solid white;
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+}
+
+button {
+  font-family: "ChalkDuster";
+  background: transparent;
+  color: white;
+  border: solid white;
+  font-size: 20px;
+  margin-top: 1px;
+}
+
+.row {
+  display: table-row;
+
+
+}
+
+.reset {
+  text-align: center;
+}
+
+.scoreboard {
+  padding-top: 10px;
+  text-align: center
+}
