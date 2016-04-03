@@ -2,7 +2,6 @@ body {
   font-family: "ChalkDuster";
   color: #E8E8E8;
   background-image: url(http://i.imgur.com/RPXhbqF.jpg);
-
 }
 
 h1 {
@@ -24,7 +23,6 @@ h1 {
   float: left;
   font-size: 50px;
   text-align: center;
-
 }
 
 button {
@@ -36,9 +34,7 @@ button {
   margin-top: 1px;
 }
 
-.row {
 
-}
 
 .reset {
   text-align: center;
@@ -48,4 +44,3 @@ button {
   padding-top: 10px;
   text-align: center
 }
-
