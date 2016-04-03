@@ -2,7 +2,7 @@ body {
   font-family: "ChalkDuster";
   color: #E8E8E8;
   background-image: url(http://i.imgur.com/RPXhbqF.jpg);
-  font-size: 10px;
+
 }
 
 h1 {
@@ -11,17 +11,20 @@ h1 {
 }
 
 .gameboard {
-  height: 33em;
-  width: 33em;
+  height: 330px;
+  width: 330px;
   margin: auto;
 }
 
 .square {
-  height: 10em;
-  width: 10em;
+  height: 100px;
+  width: 100px;
   border: 3px solid white;
   display: inline-block;
   float: left;
+  font-size: 50px;
+  text-align: center;
+
 }
 
 button {
@@ -45,3 +48,4 @@ button {
   padding-top: 10px;
   text-align: center
 }
+

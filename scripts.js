@@ -7,16 +7,15 @@ $(document).ready(function() {
   var turn = "X"
 
   $($gamecells).one('click', function() {
-   moves[this.id] = turn;
+    moves[this.id] = turn;
     count++;
     $(this).html(turn);
-    if(count % 2 === 0){
-      turn ='X';
+    if (count % 2 === 0) {
+      turn = 'X';
+    } else {
+      turn = 'O';
     }
-    else {
-      turn ='O';
-    }
-    console.log(moves,count);
+    console.log(moves, count,turn);
 
   })
 
