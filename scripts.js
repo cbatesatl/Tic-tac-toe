@@ -1,6 +1,5 @@
-
 $(document).ready(function() {
-  console.log("working");
+   console.log("working");
 
   var count = 0;
   var $gamecells = $(".square");
@@ -11,19 +10,36 @@ $(document).ready(function() {
   //var nameX = prompt("Player X enter your name");
   //var nameO = prompt("Player O enter your name");
 
+
   $(".reset").click(function() {
     $($gamecells).html("");
     count = 0;
     turn = "X";
     moves = ["", "", "", "", "", "", "", "", ""];
-    $("h2").html("X Goes First");
+    $("h2").html("X Goes First!");
     game();
     console.log(moves, count, turn);
   })
 
+  $("#resetscore").click(function() {
+   location.reload();
+
+  })
+
+
   game();
 
   function game() {
+var obj = document.createElement("audio");
+    obj.src = "http://kahimyang.info/resources/sound/click.mp3";
+    obj.volume = 0.50;
+    obj.autoPlay = false;
+    obj.preLoad = true;
+
+    $($gamecells).click(function() {
+      obj.play();
+    });
+
     $($gamecells).one('click', function() {
       moves[this.id] = turn;
       count++;
@@ -46,7 +62,7 @@ $(document).ready(function() {
           moves[2] === "X" && moves[5] === "X" && moves[8] === "X" ||
           moves[0] === "X" && moves[4] === "X" && moves[8] === "X" ||
           moves[2] === "X" && moves[4] === "X" && moves[6] === "X") {
-          $("h2").html("X WINS!!!"), $($gamecells).off(), xWins++, $("#xscore").html("X Score " + xWins ) ;
+          $("h2").html("X WINS!!!"), $($gamecells).off(), xWins++, $("#xscore").html('"X" Score ' + xWins);
         } else if (moves[0] === "O" && moves[1] === "O" && moves[2] === "O" ||
           moves[3] === "O" && moves[4] === "O" && moves[5] === "O" ||
           moves[6] === "O" && moves[7] === "O" && moves[8] === "O" ||
@@ -55,27 +71,26 @@ $(document).ready(function() {
           moves[2] === "O" && moves[5] === "O" && moves[8] === "O" ||
           moves[0] === "O" && moves[4] === "O" && moves[8] === "O" ||
           moves[2] === "O" && moves[4] === "O" && moves[6] === "O") {
-          $("h2").html("O WINS!!!"), $($gamecells).off(), oWins++, $("#oscore").html("O Score " + oWins ) ;
+          $("h2").html("O WINS!!!"), $($gamecells).off(), oWins++, $("#oscore").html('"O" Score ' + oWins);
         } else if (count === 9) {
           $("h2").html("TIE!!!"), $($gamecells).off(), console.log("Tie");
 
         }
 
         function checkPlayer() {
-        if (turn = 'X') {
-          $("h2").html("X's Turn")
-        } else if (turn = "X") {
-          $("h2").html("O's Turn")
-        }
+          if (turn = 'X') {
+            $("h2").html("X's Turn")
+          } else if (turn = "X") {
+            $("h2").html("O's Turn")
+          }
 
-      }
+        }
 
       }
 
 
 
     })
-  }
-
+}
 
 })
