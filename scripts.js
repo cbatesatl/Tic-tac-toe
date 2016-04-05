@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   console.log("working");
+  console.log("Script Activated");
 
   var count = 0;
   var $gamecells = $(".square");
@@ -22,7 +22,7 @@ $(document).ready(function() {
   })
 
   $("#resetscore").click(function() {
-   location.reload();
+    location.reload();
 
   })
 
@@ -30,11 +30,12 @@ $(document).ready(function() {
   game();
 
   function game() {
-var obj = document.createElement("audio");
+    var obj = document.createElement("audio");
     obj.src = "http://kahimyang.info/resources/sound/click.mp3";
     obj.volume = 0.50;
     obj.autoPlay = false;
     obj.preLoad = true;
+
 
     $($gamecells).click(function() {
       obj.play();
@@ -51,7 +52,9 @@ var obj = document.createElement("audio");
       }
 
       console.log(moves, count, turn);
+
       $($gamecells).on('click', checkWinner());
+
       // checks win conditions
       function checkWinner() {
         if (moves[0] === "X" && moves[1] === "X" && moves[2] === "X" ||
@@ -75,22 +78,22 @@ var obj = document.createElement("audio");
         } else if (count === 9) {
           $("h2").html("TIE!!!"), $($gamecells).off(), console.log("Tie");
 
+
         }
 
         function checkPlayer() {
           if (turn = 'X') {
-            $("h2").html("X's Turn")
+            $("h2").html("X's Turn");
           } else if (turn = "X") {
-            $("h2").html("O's Turn")
+            $("h2").html("O's Turn");
           }
 
         }
 
+
       }
 
-
-
     })
-}
+  }
 
 })
