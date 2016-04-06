@@ -7,7 +7,7 @@ The purpose of this project was to construct a simple tic-tac-toe game using htm
 [Tic Tac Toe](http://cbatesatl.github.io/Tic-tac-toe/)
 ## Tech Used
 1. Languages used: CSS, Javascript, HTML
-2. Tools Used: Sublime Text 3, Chrome Dev Tools and Trello
+2. Tools Used: Sublime Text 3, Chrome Dev Tools,Trello
 3. Other Help: Instructors at General Assembly
 
 ## Future Updates
