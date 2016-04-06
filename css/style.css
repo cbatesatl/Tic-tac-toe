@@ -16,7 +16,6 @@ h3 {
 .gameboard {
   height: 330px;
   width: 330px;
-
   margin: auto;
 }
 
@@ -28,10 +27,7 @@ h3 {
   float: left;
   font-size: 60px;
   text-align: center;
-
 }
-
-
 
 button {
   font-family: "ChalkDuster";
@@ -53,4 +49,3 @@ button {
 h2 {
   font-size: 30px;
 }
-
