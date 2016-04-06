@@ -24,7 +24,7 @@ $(document).ready(function() {
       console.log(moves, count, turn);
 
     })
-    //resets page
+    //reloads page
   $("#resetscore").click(function() {
     location.reload();
 
@@ -99,4 +99,3 @@ $(document).ready(function() {
   }
 
 })
-
