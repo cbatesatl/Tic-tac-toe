@@ -3,6 +3,7 @@
 
 ## Project Summary
 The purpose of this project was to construct a simple tic-tac-toe game using html, css, and javascript. It was a great way to put all of my newly acquired knowldedge to work. The game is a traditional version of tic tac toe that announces a winner when a three in a row combination is reached. The game also contains a scoreboard and a reset button.
+
 [Tic Tac Toe](http://cbatesatl.github.io/Tic-tac-toe/)
 
 ## Skills Used
