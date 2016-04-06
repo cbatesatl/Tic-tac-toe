@@ -90,7 +90,6 @@ $(document).ready(function() {
                   } else if (turn = "X") {
                     $("h2").html("O's Turn");
                   }
-
                 }
         */
 
@@ -100,3 +99,4 @@ $(document).ready(function() {
   }
 
 })
+
