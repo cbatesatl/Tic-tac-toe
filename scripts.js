@@ -12,15 +12,16 @@ $(document).ready(function() {
 
   //resets gameboard
   $(".reset").click(function() {
-    $($gamecells).html("");
-    count = 0;
-    turn = "X";
-    moves = ["", "", "", "", "", "", "", "", ""];
-    $("h2").html("X Goes First!");
-    game();
-    console.log(moves, count, turn);
-  })
-  //resets page
+      $($gamecells).html("");
+      count = 0;
+      turn = "X";
+      moves = ["", "", "", "", "", "", "", "", ""];
+      $("h2").html("X Goes First!");
+      game();
+      console.log(moves, count, turn);
+
+    })
+    //resets page
   $("#resetscore").click(function() {
     location.reload();
 
@@ -65,23 +66,18 @@ $(document).ready(function() {
           moves[1] === "X" && moves[4] === "X" && moves[7] === "X" ||
           moves[2] === "X" && moves[5] === "X" && moves[8] === "X" ||
           moves[0] === "X" && moves[4] === "X" && moves[8] === "X" ||
-          moves[2] === "X" && moves[4] === "X" && moves[6] === "X")
-        {
+          moves[2] === "X" && moves[4] === "X" && moves[6] === "X") {
           $("h2").html("X WINS!!!"), $($gamecells).off(), xWins++, $("#xscore").html('"X" Score ' + xWins);
-        }
-        else if (moves[0] === "O" && moves[1] === "O" && moves[2] === "O" ||
+        } else if (moves[0] === "O" && moves[1] === "O" && moves[2] === "O" ||
           moves[3] === "O" && moves[4] === "O" && moves[5] === "O" ||
           moves[6] === "O" && moves[7] === "O" && moves[8] === "O" ||
           moves[0] === "O" && moves[3] === "O" && moves[6] === "O" ||
           moves[1] === "O" && moves[4] === "O" && moves[7] === "O" ||
           moves[2] === "O" && moves[5] === "O" && moves[8] === "O" ||
           moves[0] === "O" && moves[4] === "O" && moves[8] === "O" ||
-          moves[2] === "O" && moves[4] === "O" && moves[6] === "O")
-        {
+          moves[2] === "O" && moves[4] === "O" && moves[6] === "O") {
           $("h2").html("O WINS!!!"), $($gamecells).off(), oWins++, $("#oscore").html('"O" Score ' + oWins);
-        }
-        else if (count === 9)
-        {
+        } else if (count === 9) {
           $("h2").html("TIE!!!"), $($gamecells).off(), console.log("Tie");
         }
 
